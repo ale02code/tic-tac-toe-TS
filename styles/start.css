@@ -1,0 +1,137 @@
+.start-game {
+  height: 100dvh;
+  width: 100vw;
+  display: grid;
+  position: absolute;
+  place-content: center;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 100;
+}
+
+.start-game__container {
+  height: 100dvh;
+  width: 100vw;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap-size);
+  overflow: hidden;
+  animation: show 1s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.header-start {
+  height: 45px;
+
+  &>img {
+    height: 100%;
+  }
+}
+
+.choose-player {
+  width: 100%;
+  background-color: var(--grid-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap-size);
+  padding: 1.2rem;
+  border-radius: var(--border-rounded-size);
+  box-shadow: 0px 5px var(--grid-shadow);
+}
+
+.choose-player-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--reset-color);
+}
+
+.choose-player-text-dark {
+  color: var(--reset-shadow);
+}
+
+.choose-player__content {
+  background-color: var(--background-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: var(--border-rounded-size);
+  padding: .5rem;
+}
+
+.choose-player__content__opt {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  &>img {
+    height: 80%;
+  }
+}
+
+.choose-player__content__opt-selected {
+  background-color: var(--reset-color);
+}
+
+.select-game {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: var(--gap-size);
+  width: 100%;
+}
+
+.select-game-form {
+  background-color: var(--o-player-color);
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--background-color);
+  font-weight: bold;
+  border-radius: var(--border-rounded-size);
+  box-shadow: 0px 4px rgb(177, 139, 64);
+}
+
+.select-game-form:last-child {
+  background-color: var(--x-player-color);
+  box-shadow: 0px 4px #3f9e9b;
+}
+
+@media screen and (min-width: 500px) {
+  .start-game__container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .choose-player-text {
+    font-size: .9rem;
+  }
+
+  .select-game-form {
+    font-size: 1rem;
+  }
+}

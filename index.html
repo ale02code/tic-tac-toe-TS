@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/start.css">
 
   <title>Tic Tac Toe Game</title>
 </head>
@@ -53,6 +54,34 @@
       </div>
     </footer>
   </main>
+
+  <section class="start-game">
+    <div class="start-game__container">
+      <header class="header-start">
+        <img src="assets/img/logo.svg" alt="logo icon">
+      </header>
+      <section class="choose-player">
+        <p class="choose-player-text">Pick player 1's mark</p>
+        <div class="choose-player__content">
+          <div class="choose-player__content__opt">
+            <img src="assets/img/icon-x-gray.svg" alt="player icon x">
+          </div>
+          <div class="choose-player__content__opt choose-player__content__opt-selected">
+            <img src="assets/img/icon-o-blue.svg" alt="player icon o">
+          </div>
+        </div>
+        <p class="choose-player-text choose-player-text-dark">Remember: x goes first</p>
+      </section>
+      <footer class="select-game">
+        <button class="select-game-form">
+          <p>new game (vs CPU)</p>
+        </button>
+        <button class="select-game-form">
+          <p>new game (vs player)</p>
+        </button>
+      </footer>
+    </div>
+  </section>
 </body>
 
 </html>
