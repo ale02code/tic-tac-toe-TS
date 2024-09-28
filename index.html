@@ -58,16 +58,16 @@
   <section class="start-game">
     <div class="start-game__container">
       <header class="header-start">
-        <img src="assets/img/logo.svg" alt="logo icon">
+        <img src="assets/img/logo.svg" alt="logo icon" draggable="false">
       </header>
       <section class="choose-player">
         <p class="choose-player-text">Pick player 1's mark</p>
         <div class="choose-player__content">
-          <div class="choose-player__content__opt">
-            <img src="assets/img/icon-x-gray.svg" alt="player icon x">
+          <div class="choose-player__content__opt player-1">
+            <img id="x-opt" src="assets/img/icon-x-gray.svg" alt="player icon x" draggable="false">
           </div>
           <div class="choose-player__content__opt choose-player__content__opt-selected">
-            <img src="assets/img/icon-o-blue.svg" alt="player icon o">
+            <img id="o-opt" src="assets/img/icon-o-blue.svg" alt="player icon o" draggable="false">
           </div>
         </div>
         <p class="choose-player-text choose-player-text-dark">Remember: x goes first</p>
@@ -76,12 +76,15 @@
         <button class="select-game-form">
           <p>new game (vs CPU)</p>
         </button>
-        <button class="select-game-form">
+        <button class="select-game-form player">
           <p>new game (vs player)</p>
         </button>
       </footer>
     </div>
   </section>
+
+  <script src="scripts/js/start.js"></script>
+  <script src="scripts/js/turn.js"></script>
 </body>
 
 </html>
