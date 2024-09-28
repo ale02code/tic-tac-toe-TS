@@ -135,7 +135,7 @@
   background-color: var(--o-player-color);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .main-container {
     max-width: 90%;
     margin: 0 auto;
