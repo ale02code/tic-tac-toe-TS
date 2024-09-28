@@ -1,6 +1,7 @@
 .main-container {
   width: 100vw;
-  max-width: 250px;
+  max-width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +40,7 @@
   align-items: center;
   background-color: var(--grid-color);
   border-radius: var(--border-rounded-size);
-  box-shadow: 0px 4px var(--grid-shadow);
+  box-shadow: 0px 5px var(--grid-shadow);
 }
 
 .header__turn-icon {
@@ -64,7 +65,7 @@
   box-shadow: 0px 5px var(--reset-shadow);
   background-color: var(--reset-color);
   width: calc(50% - 5px);
-  
+
   &>img {
     height: 100%;
     width: 100%;
@@ -139,9 +140,17 @@
   background-color: var(--o-player-color);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
   .main-container {
-    max-width: 90%;
+    max-width: 350px;
     margin: 0 auto;
+  }
+  
+  .header__turn-text {
+    font-size: 1rem;
+  }
+
+  .score-board {
+    font-size: 1rem;
   }
 }
