@@ -1,0 +1,132 @@
+.main-container {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap-size);
+}
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: var(--gap-size);
+}
+
+.header__logo {
+  justify-self: start;
+
+  &>img {
+    height: 20px;
+  }
+}
+
+.header__turn {
+  width: 100%;
+  height: 100%;
+}
+
+.header__turn-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--grid-color);
+  border-radius: var(--border-rounded-size);
+  box-shadow: 0px 4px var(--grid-shadow);
+}
+
+.header__turn-icon {
+  height: 13px;
+}
+
+.header__turn-text {
+  text-transform: uppercase;
+  color: var(--reset-color);
+  font-size: 13px;
+}
+
+.header__retry {
+  justify-self: end;
+  display: grid;
+  place-content: center;
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px var(--reset-shadow);
+  background-color: var(--reset-color);
+
+  &>img {
+    height: 1rem;
+  }
+}
+
+.game-board {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: var(--gap-size);
+}
+
+.game-board__cell {
+  background-color: var(--grid-color);
+  width: 75px;
+  height: 75px;
+  outline: none;
+  border: none;
+  border-radius: var(--border-rounded-size);
+  box-shadow: 0px 4px var(--grid-shadow);
+  cursor: pointer;
+}
+
+.score-board {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-size);
+}
+
+.score-board__player {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--border-rounded-size);
+}
+
+.score-board__player-name {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.score-board__draw {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--draw-color);
+  border-radius: var(--border-rounded-size);
+}
+
+.score-board__draw-label {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.score-board__player-1 {
+  background-color: var(--x-player-color);
+}
+
+.score-board__player-2 {
+  background-color: var(--o-player-color);
+}

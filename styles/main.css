@@ -1,0 +1,26 @@
+:root {
+  --background-color: #192a32;
+  --grid-color: #1f3540;
+  --grid-shadow: #122029;
+  --reset-color: #a9bfca;
+  --reset-shadow: #6f8793;
+  --x-player-color: #31c4be;
+  --o-player-color: rgb(236, 176, 54);
+  --draw-color: #a9bfca;
+  --gap-size: 12px;
+  --border-rounded-size: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  display: grid;
+  place-content: center;
+}

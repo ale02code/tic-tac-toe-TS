@@ -4,14 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/grid.css">
 
   <title>Tic Tac Toe Game</title>
 </head>
 
-<body>
-  <h1>Hello world</h1>
+<body class="body">
+  <main class="main-container">
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/img/logo.svg" alt="main logo">
+      </div>
+      <div class="header__turn">
+        <div class="header__turn-info">
+          <img class="header__turn-icon" src="assets/img/icon-x-gray.svg" alt="turn icon">
+          <p class="header__turn-text">TURN</p>
+        </div>
+      </div>
+      <button class="header__retry">
+        <img src="assets/img/icon-restart.svg" alt="">
+      </button>
+    </header>
+    <section class="game-board">
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+      <button class="game-board__cell"></button>
+    </section>
+    <footer class="score-board">
+      <div class="score-board__player score-board__player-1">
+        <p class="score-board__player-name">player 1</p>
+        <p class="score-board__player-score">0</p>
+      </div>
+      <div class="score-board__draw">
+        <p class="score-board__draw-label">ties</p>
+        <p class="score-board__draw-score">0</p>
+      </div>
+      <div class="score-board__player score-board__player-2">
+        <p class="score-board__player-name">Player 2</p>
+        <p class="score-board__player-score">0</p>
+      </div>
+    </footer>
+  </main>
 </body>
 
 </html>
