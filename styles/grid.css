@@ -11,6 +11,7 @@
 
 .header {
   width: 100%;
+  height: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
@@ -21,7 +22,7 @@
   justify-self: start;
 
   &>img {
-    height: 20px;
+    height: 100%;
   }
 }
 
@@ -42,28 +43,31 @@
 }
 
 .header__turn-icon {
-  height: 13px;
+  height: 1.2rem;
 }
 
 .header__turn-text {
   text-transform: uppercase;
   color: var(--reset-color);
-  font-size: 13px;
+  font-size: 1.2rem;
 }
 
 .header__retry {
+  height: calc(100% - 5px);
   justify-self: end;
   display: grid;
   place-content: center;
   padding: 4px;
   border: none;
   outline: none;
-  border-radius: 5px;
-  box-shadow: 0px 3px var(--reset-shadow);
+  border-radius: var(--border-rounded-size);
+  box-shadow: 0px 5px var(--reset-shadow);
   background-color: var(--reset-color);
-
+  width: calc(50% - 5px);
+  
   &>img {
-    height: 1rem;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -90,10 +94,10 @@
 
 .score-board {
   width: 100%;
-  height: 35px;
   display: flex;
   justify-content: space-between;
   gap: var(--gap-size);
+  font-size: 1.2rem;
 }
 
 .score-board__player {
@@ -104,10 +108,10 @@
   align-items: center;
   flex-direction: column;
   border-radius: var(--border-rounded-size);
+  padding: 10px 0px;
 }
 
 .score-board__player-name {
-  font-size: 8px;
   text-transform: uppercase;
 }
 
@@ -120,10 +124,10 @@
   flex-direction: column;
   background-color: var(--draw-color);
   border-radius: var(--border-rounded-size);
+  padding: 10px 0px;
 }
 
 .score-board__draw-label {
-  font-size: 8px;
   text-transform: uppercase;
 }
 
